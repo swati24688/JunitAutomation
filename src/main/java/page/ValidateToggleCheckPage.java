@@ -30,9 +30,8 @@ public class ValidateToggleCheckPage {
 	WebElement removeButton;
 
 	public void clickToggleAllElement() {
-
+		/**  click toggle all element test */
 		toggleAllElement.click();
-		
 		for(int i=0 ; i < allCheckboxes.size() ; i++ ) {	
 			System.out.println(i + " checkbox" + allCheckboxes.get(i).getText());
 			Assert.assertTrue(allCheckboxes.get(i).isSelected());
